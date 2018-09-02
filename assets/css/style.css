@@ -1,0 +1,302 @@
+/*this is the header white part to separate the navigation bar from the content*/
+header{ 
+    margin:0 auto;
+    background-color:#ffffff;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    border-bottom:2px solid #cccccc;
+}
+
+/*In this one I'm having a section called navigation to wrap my name division and the nav tag*/
+.navigation{
+    width: 960px;
+    margin: 0 auto;
+    height:80px;
+}
+
+/*this is the actual nav tag with a little border to separate the buttons*/
+nav{
+    float: right; 
+    padding: 20px;
+    border:1px;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}  
+
+/*This hold the divisions between the buttons in nav tag, so it will hold the structure correctly*/
+.vertical{
+    float: right;
+    height:20px;
+    width:1pt;
+    background-color:#cccccc;
+}
+
+/*the links in the nav tag change the color and forget the default decoration*/
+
+a{
+    float:right;
+    text-decoration: none;
+    color:#777777;
+    padding:5px;
+    margin:0 auto;
+}
+
+
+/*holds format for all the titles*/
+h1{
+    font-size: 3em;
+    position: relative;
+    top: 5px;
+}
+
+
+/*This is the div tag that holds my name in the teal color box, the size of the box to fit in the header height and be align with the container*/
+.name{
+    background-color: #4aaaa5;
+    color: white;
+    float:left;
+    width:30%;
+    padding:0px;
+    text-align:center;
+    border: 1px;
+    height: 100%;
+    position: relative;
+   
+}
+
+/* details on the font and position of the name*/
+.name h1{
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    position: relative;
+    top: 15px;
+}
+
+/*The body of this page will have a background image and then a container will appear*/
+body{
+    background-image: url("../images/gravel.png");
+}
+
+/*This is the container for the main information of the page*/
+.container{
+    overflow: hidden;
+    border: solid 1px;
+    border-color: #dddddd;
+    background-color: #ffffff;
+    clear:both;
+    width: 900px;
+    margin:30px auto;
+    padding:30px;
+}
+
+/*This belong to the portfolio page*/
+#PortfolioTitle{
+    color:#4aaaa5;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    font-size: 15px;
+    position: relative;
+    bottom: 15px;
+    float: left;
+}
+/*this hold the division on the container for the "About me" and the format*/
+#me{
+    color:#4aaaa5;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    font-size: 15px;
+    position: relative;
+    bottom: 15px;
+    float: left;
+}
+
+/*hr is the line that divides the title from the image and the text*/
+hr{
+    border-color:#cccccc;
+    background-color: #cccccc;
+    height: 1px;
+    margin:30px auto;
+    width: 900px;
+}
+
+/*this are the portfolio page image links class*/
+.ports{
+    float:left;
+    width:190px;
+    height:200px;
+    margin-right:46px;
+}
+
+/*this is the text in the image links of the portfolio page*/
+.Portfolio{
+    position: relative;
+    bottom:-100px;
+    width: 200px; 
+    height:30px;
+    background-color:#4aaaa5;
+    text-align-last: center auto;
+}
+
+/*text inside the divs in the photos*/
+.portp{
+    color:#ffffff;
+    position:relative;
+    bottom: 128px;
+    text-align:center;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+/*This holds the image floating left*/
+img{
+    float: left;
+    width:200px;
+}
+
+/*This division holds the text and float it right*/
+#about{
+    float:right;
+    width: 690px;
+    color:#777777;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form{
+    color:#777777;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.formbox{
+    width:900px;
+}
+
+#message{
+    width:900px;
+    resize: none;
+}
+
+/*this is the footer, its format, color and absolute position to the bottom*/
+footer{
+    text-align: center;
+    background-color: #777777;
+    height: 80px;
+    color:#ffffff;
+    position: absolute;
+    bottom:0;
+    width:100%;
+    border-top: 10px solid #4aaaa5;
+}
+
+/*This moves the text in a very nice position*/
+#footerText{
+    position: relative;
+    top: 10px; 
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px){
+
+
+    .navigation{
+        width: 100%;
+        margin: 0 auto;
+        height:80px;
+    }
+
+    .name h1{
+        font-family: 'Georgia', 'Times New Roman', Times, serif;
+        position: relative;
+        top: 15px;
+        font-size: 30px;
+    }
+
+    hr{
+        width:100%;
+    }
+
+
+    nav{ 
+        border:1px;
+        font-family: Arial, Helvetica, sans-serif;
+    }  
+
+    .container{
+        border: solid 1px;
+        border-color: #dddddd;
+        background-color: #ffffff;
+        clear:both;
+        width: 80%;
+    }
+
+    #about{
+        float:right;
+        color:#777777;
+        font-family: Arial, Helvetica, sans-serif;
+        width:60%;
+    }
+
+    p{
+        text-align: justify;
+    }
+
+    .formbox{
+        width:100%;
+    }
+
+    #message{
+        width:100%;
+    }
+
+    #footerPort{
+        position:relative;
+    
+    }
+    
+}
+
+@media only screen and (max-width: 640px){
+    .name{
+        background-color: #4aaaa5;
+        color: white;
+        float:left;
+        width:100%;
+        padding:0px;
+        text-align:center;
+        border: 1px;
+        height: 100%;
+        position: relative;
+       
+    }
+    
+    .nav{
+        position: absolute;
+        width: 100%;
+        margin-right:40px;
+    }
+
+    img{
+        width:100%;
+    }
+
+    #about{
+        width:100%;
+        margin: 10px;
+
+    }
+
+    p{
+        text-align: justify;
+        width:100%;
+    }
+
+    footer{
+        position:relative;
+    }
+
+    #contactFoot{
+        position: absolute;
+    }
+}
+
+
+
+
+
